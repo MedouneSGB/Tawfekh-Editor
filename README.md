@@ -1,6 +1,16 @@
 # Tawfekh-Editor
 A beautiful and customizable text editor.✨
 
+Tawfekh Editor is a simple and easy to use editor.  
+You can Customize it as you want to get the best Write Feeling.
+
+Tawfekh has been created to be a text editor  
+that puts you in a writing mood 🌾
+
+## Contributions
+Please feel free to fork and Contribute!😁  
+Drop Pull Requests and push some stars ⭐⭐⭐
+
 ## Download
 [![image](https://user-images.githubusercontent.com/40875400/164351899-3d23de26-69ce-40a2-b750-94f2c4c428c8.png)](https://github.com/MedouneSGB/Tawfekh-Editor/raw/89b632e277d587f22034cb1b5127b0e3104b4672/exe/Tawfekh%20Editor.exe)
 

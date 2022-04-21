@@ -77,7 +77,7 @@ public class Tawfekh_editor extends javax.swing.JFrame implements ActionListener
         cbPolice = new javax.swing.JComboBox<>();
         lblParamPolice = new javax.swing.JLabel();
         btnUploadBg = new javax.swing.JButton();
-        lblParamPolice1 = new javax.swing.JLabel();
+        lblParamUpBG = new javax.swing.JLabel();
         lblSignature = new javax.swing.JLabel();
         btnThemeBlack1 = new javax.swing.JButton();
         imgBackground = new javax.swing.JLabel();
@@ -415,7 +415,7 @@ public class Tawfekh_editor extends javax.swing.JFrame implements ActionListener
             }
         });
         panelParametre.add(btnParamSave);
-        btnParamSave.setBounds(60, 317, 218, 61);
+        btnParamSave.setBounds(50, 317, 218, 61);
 
         btnParamRetour.setBackground(new java.awt.Color(153, 102, 0));
         btnParamRetour.setFont(new java.awt.Font("Garamond", 2, 48)); // NOI18N
@@ -428,22 +428,22 @@ public class Tawfekh_editor extends javax.swing.JFrame implements ActionListener
             }
         });
         panelParametre.add(btnParamRetour);
-        btnParamRetour.setBounds(304, 317, 164, 61);
+        btnParamRetour.setBounds(294, 317, 164, 61);
 
         txtChangeTitre.setFont(new java.awt.Font("Cormorant Garamond", 0, 24)); // NOI18N
         panelParametre.add(txtChangeTitre);
-        txtChangeTitre.setBounds(215, 41, 253, 39);
+        txtChangeTitre.setBounds(205, 41, 253, 39);
         txtChangeTitre.setText(lblTitre.getText());
 
         lblParamTitre.setFont(new java.awt.Font("Cormorant Garamond", 0, 36)); // NOI18N
         lblParamTitre.setText("Titre :");
         panelParametre.add(lblParamTitre);
-        lblParamTitre.setBounds(59, 34, 150, 45);
+        lblParamTitre.setBounds(50, 34, 150, 45);
 
         lblParamTheme.setFont(new java.awt.Font("Cormorant Garamond", 0, 36)); // NOI18N
         lblParamTheme.setText("Thème : ");
         panelParametre.add(lblParamTheme);
-        lblParamTheme.setBounds(60, 100, 150, 47);
+        lblParamTheme.setBounds(50, 100, 150, 47);
 
         btnThemeClassique.setBackground(new java.awt.Color(212, 161, 8));
         btnThemeClassique.setFont(new java.awt.Font("Cormorant Garamond", 0, 20)); // NOI18N
@@ -455,7 +455,7 @@ public class Tawfekh_editor extends javax.swing.JFrame implements ActionListener
             }
         });
         panelParametre.add(btnThemeClassique);
-        btnThemeClassique.setBounds(215, 107, 98, 39);
+        btnThemeClassique.setBounds(205, 107, 98, 39);
 
         btnThemeBlack.setBackground(new java.awt.Color(0, 0, 0));
         btnThemeBlack.setFont(new java.awt.Font("Cormorant Garamond", 0, 20)); // NOI18N
@@ -467,19 +467,23 @@ public class Tawfekh_editor extends javax.swing.JFrame implements ActionListener
             }
         });
         panelParametre.add(btnThemeBlack);
-        btnThemeBlack.setBounds(320, 107, 70, 39);
+        btnThemeBlack.setBounds(310, 107, 70, 39);
 
+        cbPolice.setBackground(new java.awt.Color(168, 111, 0));
         cbPolice.setFont(new java.awt.Font("Cormorant Garamond", 0, 24)); // NOI18N
+        cbPolice.setForeground(new java.awt.Color(255, 255, 255));
         cbPolice.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Garamond", "Cormorant Garamond", "Times New Roman" }));
         panelParametre.add(cbPolice);
-        cbPolice.setBounds(215, 173, 252, 41);
+        cbPolice.setBounds(205, 173, 252, 41);
 
         lblParamPolice.setFont(new java.awt.Font("Cormorant Garamond", 0, 36)); // NOI18N
         lblParamPolice.setText("Police :");
         panelParametre.add(lblParamPolice);
-        lblParamPolice.setBounds(60, 170, 150, 40);
+        lblParamPolice.setBounds(50, 170, 150, 40);
 
+        btnUploadBg.setBackground(new java.awt.Color(168, 111, 0));
         btnUploadBg.setFont(new java.awt.Font("Cormorant Garamond", 0, 24)); // NOI18N
+        btnUploadBg.setForeground(new java.awt.Color(255, 255, 255));
         btnUploadBg.setText("Upload BackGround");
         btnUploadBg.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -487,13 +491,13 @@ public class Tawfekh_editor extends javax.swing.JFrame implements ActionListener
             }
         });
         panelParametre.add(btnUploadBg);
-        btnUploadBg.setBounds(215, 248, 252, 39);
+        btnUploadBg.setBounds(205, 248, 252, 39);
 
-        lblParamPolice1.setFont(new java.awt.Font("Cormorant Garamond", 1, 23)); // NOI18N
-        lblParamPolice1.setForeground(new java.awt.Color(153, 51, 0));
-        lblParamPolice1.setText(" Format 960 x 678");
-        panelParametre.add(lblParamPolice1);
-        lblParamPolice1.setBounds(60, 250, 150, 29);
+        lblParamUpBG.setFont(new java.awt.Font("Cormorant Garamond", 1, 23)); // NOI18N
+        lblParamUpBG.setForeground(new java.awt.Color(153, 51, 0));
+        lblParamUpBG.setText(" Format 960 x 678");
+        panelParametre.add(lblParamUpBG);
+        lblParamUpBG.setBounds(50, 250, 150, 29);
 
         lblSignature.setFont(new java.awt.Font("Freestyle Script", 3, 36)); // NOI18N
         lblSignature.setForeground(new java.awt.Color(116, 77, 0));
@@ -511,7 +515,7 @@ public class Tawfekh_editor extends javax.swing.JFrame implements ActionListener
             }
         });
         panelParametre.add(btnThemeBlack1);
-        btnThemeBlack1.setBounds(395, 107, 70, 39);
+        btnThemeBlack1.setBounds(385, 107, 70, 39);
 
         panelGlobale.add(panelParametre);
         panelParametre.setBounds(220, 110, 730, 560);
@@ -634,12 +638,18 @@ public class Tawfekh_editor extends javax.swing.JFrame implements ActionListener
 
     private void btnParamSaveActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnParamSaveActionPerformed
 
+        try {
         int x = 0;
         String choix = cbPolice.getSelectedItem().toString();
         if ("Garamond".equals(choix)) {
             x = 2;
         }
         lblTitre.setText(txtChangeTitre.getText());
+        changeTextFont(choix, x);
+            
+        } catch (Exception e) {
+            System.out.println("Erreur Change Police" + e);
+        }
     }//GEN-LAST:event_btnParamSaveActionPerformed
 
     public void changeTextFont(String choix, int x) {
@@ -706,6 +716,7 @@ public class Tawfekh_editor extends javax.swing.JFrame implements ActionListener
         lblParamTheme.setForeground(Color.getColor("", colorMenu));
         lblParamPolice.setForeground(Color.getColor("", colorMenu));
         lblSignature.setForeground(Color.getColor("", colorMenu));
+        lblParamUpBG.setForeground(Color.getColor("", colorMenu));
 
     }
 
@@ -980,9 +991,9 @@ public class Tawfekh_editor extends javax.swing.JFrame implements ActionListener
     private javax.swing.JTextArea jTextArea1;
     private javax.swing.JTextArea jTextArea2;
     private javax.swing.JLabel lblParamPolice;
-    private javax.swing.JLabel lblParamPolice1;
     private javax.swing.JLabel lblParamTheme;
     private javax.swing.JLabel lblParamTitre;
+    private javax.swing.JLabel lblParamUpBG;
     private javax.swing.JLabel lblSaveMessage;
     private javax.swing.JLabel lblSignature;
     private javax.swing.JLabel lblTitre;

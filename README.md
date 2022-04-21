@@ -11,7 +11,8 @@ Please feel free to fork and Contribute!😁
 Drop Pull Requests and push some stars ⭐⭐⭐
 
 ## Download v1.0
-[![image](https://user-images.githubusercontent.com/40875400/164351899-3d23de26-69ce-40a2-b750-94f2c4c428c8.png)](https://raw.githubusercontent.com/MedouneSGB/Tawfekh-Editor/main/distros/exe/Tawfekh%20Editor.exe)
+[![image](https://user-images.githubusercontent.com/40875400/164351899-3d23de26-69ce-40a2-b750-94f2c4c428c8.png)](https://raw.githubusercontent.com/MedouneSGB/Tawfekh-Editor/main/distros/exe/Tawfekh%20Editor.exe)  
+Exe file will be available in soon 🔥
 
 ## Screens
 ![image](https://user-images.githubusercontent.com/40875400/164351287-98e2ecfe-309a-4c31-811f-aeaddf522550.png)

@@ -18,6 +18,8 @@ Drop Pull Requests and push some stars ⭐⭐⭐
 ![image](https://user-images.githubusercontent.com/40875400/164352439-d68f3ed2-5d13-4fef-a399-7cb55f497569.png)
 ![image](https://user-images.githubusercontent.com/40875400/164442418-90303dc5-b7ca-4b9b-a00f-3ae4065013ef.png)
 ![image](https://user-images.githubusercontent.com/40875400/164442520-12f7f5dd-2cb6-4200-bed0-cb27b5d0b14f.png)
-![image](https://user-images.githubusercontent.com/40875400/164351129-650ccb82-2016-4cf8-8048-7ff9816f0f6e.png)
-![image](https://user-images.githubusercontent.com/40875400/164352449-fd889fde-43ea-4a08-975f-6f87c4fe8921.png)
+![image](https://user-images.githubusercontent.com/40875400/164509494-1f6c9c9d-3e7c-40f9-9e13-0d62fdf0b90c.png)
+![image](https://user-images.githubusercontent.com/40875400/164509563-1ade0aab-709d-4398-8863-6ed56f3a5f67.png)
+
+
 

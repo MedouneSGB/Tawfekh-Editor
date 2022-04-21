@@ -1,11 +1,10 @@
 # Tawfekh-Editor
 A beautiful and customizable text editor.✨
 
-Tawfekh Editor is a simple and easy to use editor.  
+Tawfekh Editor is simple and easy to use.  
 You can Customize it as you want to get the best Write Feeling.
 
-Tawfekh has been created to be a text editor  
-that puts you in a writing mood 🌾
+Tawfekh has been created to diffuse a writing mood 🌾
 
 ## Contributions
 Please feel free to fork and Contribute!😁  

@@ -582,7 +582,7 @@ public class Tawfekh_editor extends javax.swing.JFrame implements ActionListener
         panelAccueil.setVisible(false);
         panelEditeur.setVisible(true);
         jTextArea1.requestFocus();
-        //openText(fileName);
+        openText(fileName);
 
     }//GEN-LAST:event_btnNouveauActionPerformed
 

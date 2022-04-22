@@ -6,13 +6,11 @@ import java.awt.Toolkit;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.io.BufferedReader;
-import javax.swing.ImageIcon;
 import java.io.File;
 import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
 import javax.swing.JFileChooser;
-import javax.swing.JOptionPane;
 import javax.swing.event.DocumentEvent;
 import javax.swing.event.DocumentListener;
 import javax.swing.text.Element;
@@ -26,7 +24,6 @@ public class Tawfekh_editor extends javax.swing.JFrame implements ActionListener
 
         initComponents();
         setIconImage();
-
         tableListener();
 
     }
@@ -246,6 +243,11 @@ public class Tawfekh_editor extends javax.swing.JFrame implements ActionListener
         btnSaveAs.setBackground(new java.awt.Color(153, 102, 0));
         btnSaveAs.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/save-file.png"))); // NOI18N
         btnSaveAs.setEnabled(false);
+        btnSaveAs.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnSaveAsActionPerformed(evt);
+            }
+        });
         panelEditeur.add(btnSaveAs);
         btnSaveAs.setBounds(256, 4, 45, 45);
         btnSaveAs.setVisible(false);
@@ -452,11 +454,6 @@ public class Tawfekh_editor extends javax.swing.JFrame implements ActionListener
         cbPolice.setFont(new java.awt.Font("Calisto MT", 2, 24)); // NOI18N
         cbPolice.setForeground(new java.awt.Color(255, 255, 255));
         cbPolice.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Calisto MT", "Garamond", "Times New Roman" }));
-        cbPolice.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                cbPoliceActionPerformed(evt);
-            }
-        });
         panelParametre.add(cbPolice);
         cbPolice.setBounds(197, 173, 280, 41);
 
@@ -518,10 +515,12 @@ public class Tawfekh_editor extends javax.swing.JFrame implements ActionListener
     }// </editor-fold>//GEN-END:initComponents
 
     public final void setIconImage() {
+        // Add Frame icon.
         setIconImage(Toolkit.getDefaultToolkit().getImage(getClass().getResource("/img/logo.jpg")));
     }
 
     public final void tableListener() {
+        // Check Table to set Line No
         jTextArea1.getCaretListeners();
         jTextArea1.getDocument().addDocumentListener(new DocumentListener() {
             public String getText() {
@@ -553,29 +552,32 @@ public class Tawfekh_editor extends javax.swing.JFrame implements ActionListener
     }
 
     private void btnQuitterActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnQuitterActionPerformed
-
+        // Exit.
         System.exit(0);
 
     }//GEN-LAST:event_btnQuitterActionPerformed
 
     private void btnParametreActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnParametreActionPerformed
-
+        // OpenSettings.
         panelAccueil.setVisible(false);
         panelParametre.setVisible(true);
 
     }//GEN-LAST:event_btnParametreActionPerformed
 
     private void btnNouveauActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnNouveauActionPerformed
-
+        // Open Editor.
         panelAccueil.setVisible(false);
         panelEditeur.setVisible(true);
+
         jTextArea1.requestFocus();
         openText(fileName);
 
     }//GEN-LAST:event_btnNouveauActionPerformed
 
     private void btnFichierOuvert1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnFichierOuvert1ActionPerformed
+        // Open File position 1.
 
+        // Check Active text.
         switch (textActif) {
             case "1" ->
                 text1 = jTextArea1.getText();
@@ -584,48 +586,53 @@ public class Tawfekh_editor extends javax.swing.JFrame implements ActionListener
             case "3" ->
                 text3 = jTextArea1.getText();
         }
+
+        // Set Text 1 active.
         textActif = "1";
         jTextArea1.setText(text1);
-        btnFichierOuvert1.setBackground(new java.awt.Color(153, 102, 0));
+
+        // Change Button Status color
+        btnFichierOuvert1.setBackground(new java.awt.Color(153, 102, 0)); //Active
         btnFichierOuvert2.setBackground(new java.awt.Color(79, 53, 0));
         btnFichierOuvert3.setBackground(new java.awt.Color(79, 53, 0));
 
     }//GEN-LAST:event_btnFichierOuvert1ActionPerformed
 
     private void btnColorBlackActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnColorBlackActionPerformed
-
+        // Set Text Color to BLACK
         jTextArea1.setForeground(Color.BLACK);
         panelColorChoose.setVisible(false);
 
     }//GEN-LAST:event_btnColorBlackActionPerformed
 
     private void btnColorWhiteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnColorWhiteActionPerformed
-
+        // Set Text Color to WHITE
         jTextArea1.setForeground(Color.WHITE);
         panelColorChoose.setVisible(false);
 
     }//GEN-LAST:event_btnColorWhiteActionPerformed
 
     private void btnColorRedActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnColorRedActionPerformed
-
+        //Set Text Color to RED
         jTextArea1.setForeground(Color.RED);
         panelColorChoose.setVisible(false);
 
     }//GEN-LAST:event_btnColorRedActionPerformed
 
     private void btnColorYellowActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnColorYellowActionPerformed
-
+        // Set Text Color to YELLOW
         jTextArea1.setForeground(Color.YELLOW);
         panelColorChoose.setVisible(false);
 
     }//GEN-LAST:event_btnColorYellowActionPerformed
 
     private void btnParamSaveActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnParamSaveActionPerformed
-
+        // Save Settings
         try {
+            // Add font italic
             int x = 0;
             String choix = cbPolice.getSelectedItem().toString();
-            if ("Garamond".equals(choix) || "Calisto MT".equals(choix) ) {
+            if ("Garamond".equals(choix) || "Calisto MT".equals(choix)) {
                 x = 2;
             }
             lblTitre.setText(txtChangeTitre.getText());
@@ -638,65 +645,63 @@ public class Tawfekh_editor extends javax.swing.JFrame implements ActionListener
 
     public void changeTextFont(String choix, int x) {
 
+        // Accueil Panel.
         lblTitre.setFont(new java.awt.Font(choix, x, 78));
-
-        lblParamTitre.setFont(new java.awt.Font(choix, x, 36));
-        lblParamTheme.setFont(new java.awt.Font(choix, x, 36));
-        lblParamPolice.setFont(new java.awt.Font(choix, x, 36));
-
-        lblParamUpBG.setFont(new java.awt.Font(choix, x, 23));
-        btnUploadBg.setFont(new java.awt.Font(choix, x, 24));
-        
-        txtChangeTitre.setFont(new java.awt.Font(choix, x, 24));
-        cbPolice.setFont(new java.awt.Font(choix, x, 24));
-        
-        btnThemeClassique.setFont(new java.awt.Font(choix, x, 20));
-        btnThemeBlack.setFont(new java.awt.Font(choix, x, 20));
-        btnThemePink.setFont(new java.awt.Font(choix, x, 20));
-
-        btnParamSave.setFont(new java.awt.Font(choix, x, 40));
-        btnParamRetour.setFont(new java.awt.Font(choix, x, 40));
-        
         btnNouveau.setFont(new java.awt.Font(choix, x, 40));
         btnParametre.setFont(new java.awt.Font(choix, x, 40));
         btnQuitter.setFont(new java.awt.Font(choix, x, 40));
-        
+
+        // Settings Panel.
+        txtChangeTitre.setFont(new java.awt.Font(choix, x, 24));
+        lblParamTitre.setFont(new java.awt.Font(choix, x, 36));
+        lblParamTheme.setFont(new java.awt.Font(choix, x, 36));
+        lblParamPolice.setFont(new java.awt.Font(choix, x, 36));
+        lblParamUpBG.setFont(new java.awt.Font(choix, x, 23));
+        btnUploadBg.setFont(new java.awt.Font(choix, x, 24));
+        btnThemeClassique.setFont(new java.awt.Font(choix, x, 20));
+        btnThemeBlack.setFont(new java.awt.Font(choix, x, 20));
+        btnThemePink.setFont(new java.awt.Font(choix, x, 20));
+        btnParamSave.setFont(new java.awt.Font(choix, x, 40));
+        btnParamRetour.setFont(new java.awt.Font(choix, x, 40));
+        cbPolice.setFont(new java.awt.Font(choix, x, 24));
+
+        // Editor Panel.
         jTextArea1.setFont(new java.awt.Font(choix, x, 24));
         jTextArea2.setFont(new java.awt.Font(choix, x, 24));
-        
         btnFichierOuvert1.setFont(new java.awt.Font(choix, x, 24));
         btnFichierOuvert2.setFont(new java.awt.Font(choix, x, 24));
         btnFichierOuvert3.setFont(new java.awt.Font(choix, x, 24));
+
         repaint();
 
     }
 
     private void btnParamRetourActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnParamRetourActionPerformed
-
+        // Leave Settings.
         panelParametre.setVisible(false);
         panelAccueil.setVisible(true);
 
     }//GEN-LAST:event_btnParamRetourActionPerformed
 
     private void btnThemeClassiqueActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnThemeClassiqueActionPerformed
-
+        // Set "Classique" theme.
         imgBackground.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/img.jpg")));
-
         jTextArea1.setForeground(Color.BLACK);
         lblSignature.setForeground(Color.BLACK);
 
         Color colorMenu = new Color(0, 0, 0);
         Color colorTitre = new Color(153, 51, 0);
-        changeTitreEtMenuColor(colorTitre, colorMenu);
-
         Color colorBtnEditeur = new Color(153, 102, 0);
+
+        changeTitreEtMenuColor(colorTitre, colorMenu);
         changeBtnColor(colorBtnEditeur);
+
         repaint();
 
     }//GEN-LAST:event_btnThemeClassiqueActionPerformed
 
     private void btnThemeBlackActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnThemeBlackActionPerformed
-
+        // Set "Black" theme.
         imgBackground.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/bg2.jpg")));
 
         Color colorTitre = new Color(255, 255, 255);
@@ -711,9 +716,8 @@ public class Tawfekh_editor extends javax.swing.JFrame implements ActionListener
     }//GEN-LAST:event_btnThemeBlackActionPerformed
 
     public void changeTitreEtMenuColor(Color colorTitre, Color colorMenu) {
-
+        // Change Title and Settings Text Color.
         lblTitre.setForeground(Color.getColor("", colorTitre));
-
         jTextArea1.setForeground(Color.getColor("", colorMenu));
         lblParamTitre.setForeground(Color.getColor("", colorMenu));
         lblParamTheme.setForeground(Color.getColor("", colorMenu));
@@ -724,7 +728,7 @@ public class Tawfekh_editor extends javax.swing.JFrame implements ActionListener
     }
 
     public void changeBtnColor(Color color) {
-
+        // Change Editor Btns Color.
         btnAdd.setBackground(Color.getColor("", color));
         btnOpen.setBackground(Color.getColor("", color));
         btnSave.setBackground(Color.getColor("", color));
@@ -735,7 +739,7 @@ public class Tawfekh_editor extends javax.swing.JFrame implements ActionListener
     }
 
     private void btnUploadBgActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnUploadBgActionPerformed
-
+        // Updoad New Background.
         try {
             JFileChooser chooser = new JFileChooser();
             chooser.showOpenDialog(null);
@@ -751,37 +755,50 @@ public class Tawfekh_editor extends javax.swing.JFrame implements ActionListener
     }//GEN-LAST:event_btnUploadBgActionPerformed
 
     private void btnAddActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAddActionPerformed
-
+        //Add New File.
         countNewFiles++;
         switch (countNewFiles) {
             case 1 -> {
-
+                // Save text 1 state.
                 text1 = jTextArea1.getText();
+
+                // Show new file 2.
                 btnFichierOuvert2.setVisible(true);
                 btnFichierOuvert2.setText("New-file " + countNewFiles);
+
+                // Set file 2 Active.
                 textActif = "2";
                 jTextArea1.setText(text2);
+
+                // Change Button Status color
                 btnFichierOuvert1.setBackground(new java.awt.Color(79, 53, 0));
-                btnFichierOuvert2.setBackground(new java.awt.Color(153, 102, 0));
+                btnFichierOuvert2.setBackground(new java.awt.Color(153, 102, 0)); //Active
                 btnFichierOuvert3.setBackground(new java.awt.Color(79, 53, 0));
 
             }
             case 2 -> {
+                // Save text 2 state.
                 text2 = jTextArea1.getText();
+
+                // Show new file 3.
                 btnFichierOuvert3.setVisible(true);
                 btnFichierOuvert3.setText("New-file " + countNewFiles);
+
+                // Set file 3 Active.
                 textActif = "3";
                 jTextArea1.setText(text3);
+
+                // Change Button Status color
                 btnFichierOuvert1.setBackground(new java.awt.Color(79, 53, 0));
                 btnFichierOuvert2.setBackground(new java.awt.Color(79, 53, 0));
-                btnFichierOuvert3.setBackground(new java.awt.Color(153, 102, 0));
+                btnFichierOuvert3.setBackground(new java.awt.Color(153, 102, 0)); //Active
             }
         }
 
     }//GEN-LAST:event_btnAddActionPerformed
 
     private void btnOpenActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnOpenActionPerformed
-
+        //Open File.
         try {
             JFileChooser chooser = new JFileChooser();
             chooser.showOpenDialog(null);
@@ -802,7 +819,7 @@ public class Tawfekh_editor extends javax.swing.JFrame implements ActionListener
     }//GEN-LAST:event_btnOpenActionPerformed
 
     private void btnSaveActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSaveActionPerformed
-
+        //Save File.
         String text = jTextArea1.getText();
         updateText(fileName, text);
 
@@ -811,7 +828,7 @@ public class Tawfekh_editor extends javax.swing.JFrame implements ActionListener
     }//GEN-LAST:event_btnSaveActionPerformed
 
     private void btnColorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnColorActionPerformed
-
+        // Change Text Color.
         if (colorPaneState == true) {
             panelColorChoose.setVisible(true);
             colorPaneState = false;
@@ -823,14 +840,16 @@ public class Tawfekh_editor extends javax.swing.JFrame implements ActionListener
     }//GEN-LAST:event_btnColorActionPerformed
 
     private void btnExitActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnExitActionPerformed
-
+        // Leave Editor.
         panelEditeur.setVisible(false);
         panelAccueil.setVisible(true);
 
     }//GEN-LAST:event_btnExitActionPerformed
 
     private void btnFichierOuvert2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnFichierOuvert2ActionPerformed
+        // Open File position 2.
 
+        // Check Active text.
         switch (textActif) {
             case "1" ->
                 text1 = jTextArea1.getText();
@@ -840,16 +859,21 @@ public class Tawfekh_editor extends javax.swing.JFrame implements ActionListener
                 text3 = jTextArea1.getText();
         }
 
+        // Set file 2 Active.
         textActif = "2";
         jTextArea1.setText(text2);
+
+        // Change Button Status color.
         btnFichierOuvert1.setBackground(new java.awt.Color(79, 53, 0));
-        btnFichierOuvert2.setBackground(new java.awt.Color(153, 102, 0));
+        btnFichierOuvert2.setBackground(new java.awt.Color(153, 102, 0)); //Active
         btnFichierOuvert3.setBackground(new java.awt.Color(79, 53, 0));
 
     }//GEN-LAST:event_btnFichierOuvert2ActionPerformed
 
     private void btnFichierOuvert3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnFichierOuvert3ActionPerformed
+        // Open File position 3.
 
+        // Check Active text.
         switch (textActif) {
             case "1" ->
                 text1 = jTextArea1.getText();
@@ -859,27 +883,31 @@ public class Tawfekh_editor extends javax.swing.JFrame implements ActionListener
                 text3 = jTextArea1.getText();
         }
 
+        // Set file 2 Active.
         textActif = "3";
         jTextArea1.setText(text3);
+
+        // Change Button Status color.
         btnFichierOuvert1.setBackground(new java.awt.Color(79, 53, 0));
         btnFichierOuvert2.setBackground(new java.awt.Color(79, 53, 0));
-        btnFichierOuvert3.setBackground(new java.awt.Color(153, 102, 0));
+        btnFichierOuvert3.setBackground(new java.awt.Color(153, 102, 0)); //Active
 
     }//GEN-LAST:event_btnFichierOuvert3ActionPerformed
 
     private void btnCloseFileActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCloseFileActionPerformed
-        // TODO add your handling code here:
+        // Close File.
     }//GEN-LAST:event_btnCloseFileActionPerformed
 
     private void btnThemePinkActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnThemePinkActionPerformed
-
+        // Set "Pink" theme.
         imgBackground.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/bg4.png")));
 
+        // Add Color variables.
         Color colorTitre = new Color(255, 255, 255);
         Color colorMenu = new Color(255, 255, 255);
-        changeTitreEtMenuColor(colorTitre, colorMenu);
-
         Color color = new Color(204, 204, 255);
+
+        changeTitreEtMenuColor(colorTitre, colorMenu);
         changeBtnColor(color);
 
         repaint();
@@ -887,15 +915,16 @@ public class Tawfekh_editor extends javax.swing.JFrame implements ActionListener
     }//GEN-LAST:event_btnThemePinkActionPerformed
 
     private void lblSaveMessageFocusLost(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_lblSaveMessageFocusLost
+        // Save Status Text.
         lblSaveMessage.setVisible(false);
     }//GEN-LAST:event_lblSaveMessageFocusLost
 
-    private void cbPoliceActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cbPoliceActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_cbPoliceActionPerformed
+    private void btnSaveAsActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSaveAsActionPerformed
+        // Save File as.
+    }//GEN-LAST:event_btnSaveAsActionPerformed
 
     public void openText(String fileName) {
-
+        // Read Text File.
         try {
             FileReader fr = new FileReader(fileName);
             try ( BufferedReader br = new BufferedReader(fr)) {
@@ -906,7 +935,6 @@ public class Tawfekh_editor extends javax.swing.JFrame implements ActionListener
                     text1 = text1 + line + "\n";
                     repaint();
                 }
-
                 jTextArea1.setText(text1);
             }
         } catch (IOException e) {
@@ -915,7 +943,9 @@ public class Tawfekh_editor extends javax.swing.JFrame implements ActionListener
     }
 
     public void updateText(String fileName, String text) {
+        // Update Text File.
         try {
+            // Check Active file.
             if ("temp".equals(fileName)) {
                 String init = fileName;
                 switch (textActif) {
@@ -925,6 +955,8 @@ public class Tawfekh_editor extends javax.swing.JFrame implements ActionListener
                         fileName = init + "2";
                 }
             }
+            
+            // Write in file.
             FileWriter fw = new FileWriter(fileName);
             fw.write(text);
             fw.close();
@@ -934,16 +966,8 @@ public class Tawfekh_editor extends javax.swing.JFrame implements ActionListener
         }
     }
 
-    public void actionListener(ActionListener ae) {
-
-        jTextArea1.getCaretPosition();
-        System.out.println("hello");
-        System.out.println(jTextArea1.getCaretPosition());
-
-    }
-
     public static void main(String args[]) {
-        //Look and Feel
+        // Look and Feel "Nimbus".
         try {
             for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
                 if ("Nimbus".equals(info.getName())) {
@@ -1015,7 +1039,6 @@ public class Tawfekh_editor extends javax.swing.JFrame implements ActionListener
 
     @Override
     public void actionPerformed(ActionEvent e) {
-
         throw new UnsupportedOperationException("Not supported yet.");
     }
 }

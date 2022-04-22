@@ -95,7 +95,7 @@ public class Tawfekh_editor extends javax.swing.JFrame implements ActionListener
         panelAccueil.setLayout(null);
 
         btnNouveau.setBackground(new java.awt.Color(138, 92, 1));
-        btnNouveau.setFont(new java.awt.Font("Garamond", 2, 48)); // NOI18N
+        btnNouveau.setFont(new java.awt.Font("Calisto MT", 2, 40)); // NOI18N
         btnNouveau.setForeground(new java.awt.Color(255, 255, 255));
         btnNouveau.setText("Nouveau Chef d'oeuvre");
         btnNouveau.setFocusPainted(false);
@@ -105,10 +105,10 @@ public class Tawfekh_editor extends javax.swing.JFrame implements ActionListener
             }
         });
         panelAccueil.add(btnNouveau);
-        btnNouveau.setBounds(260, 211, 408, 61);
+        btnNouveau.setBounds(260, 211, 408, 53);
 
         btnParametre.setBackground(new java.awt.Color(153, 102, 0));
-        btnParametre.setFont(new java.awt.Font("Garamond", 2, 48)); // NOI18N
+        btnParametre.setFont(new java.awt.Font("Calisto MT", 2, 40)); // NOI18N
         btnParametre.setForeground(new java.awt.Color(255, 255, 255));
         btnParametre.setText("Paramétres");
         btnParametre.setFocusPainted(false);
@@ -118,10 +118,10 @@ public class Tawfekh_editor extends javax.swing.JFrame implements ActionListener
             }
         });
         panelAccueil.add(btnParametre);
-        btnParametre.setBounds(260, 301, 218, 61);
+        btnParametre.setBounds(260, 301, 218, 53);
 
         btnQuitter.setBackground(new java.awt.Color(153, 102, 0));
-        btnQuitter.setFont(new java.awt.Font("Garamond", 2, 48)); // NOI18N
+        btnQuitter.setFont(new java.awt.Font("Calisto MT", 2, 40)); // NOI18N
         btnQuitter.setForeground(new java.awt.Color(255, 255, 255));
         btnQuitter.setText("Quitter");
         btnQuitter.setFocusPainted(false);
@@ -131,9 +131,9 @@ public class Tawfekh_editor extends javax.swing.JFrame implements ActionListener
             }
         });
         panelAccueil.add(btnQuitter);
-        btnQuitter.setBounds(504, 301, 164, 61);
+        btnQuitter.setBounds(504, 301, 164, 53);
 
-        lblTitre.setFont(new java.awt.Font("Garamond", 2, 78)); // NOI18N
+        lblTitre.setFont(new java.awt.Font("Calisto MT", 2, 78)); // NOI18N
         lblTitre.setForeground(new java.awt.Color(153, 51, 0));
         lblTitre.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         lblTitre.setText("Tawfekh Mémorial");
@@ -290,7 +290,7 @@ public class Tawfekh_editor extends javax.swing.JFrame implements ActionListener
         jScrollPane1.setViewportBorder(null);
 
         jTextArea1.setColumns(20);
-        jTextArea1.setFont(new java.awt.Font("Cormorant Garamond", 1, 24)); // NOI18N
+        jTextArea1.setFont(new java.awt.Font("Calisto MT", 2, 24)); // NOI18N
         jTextArea1.setRows(5);
         jTextArea1.setSelectionColor(new java.awt.Color(153, 51, 0));
         jScrollPane1.setViewportView(jTextArea1);
@@ -305,7 +305,7 @@ public class Tawfekh_editor extends javax.swing.JFrame implements ActionListener
         jTextArea2.setEditable(false);
         jTextArea2.setBackground(new java.awt.Color(255, 255, 255));
         jTextArea2.setColumns(1);
-        jTextArea2.setFont(new java.awt.Font("Cormorant Garamond", 0, 24)); // NOI18N
+        jTextArea2.setFont(new java.awt.Font("Calisto MT", 2, 24)); // NOI18N
         jTextArea2.setRows(5);
         jTextArea2.setText("1");
         jScrollPane2.setViewportView(jTextArea2);
@@ -324,7 +324,7 @@ public class Tawfekh_editor extends javax.swing.JFrame implements ActionListener
         panelFichiers.setLayout(null);
 
         btnFichierOuvert1.setBackground(new java.awt.Color(153, 102, 0));
-        btnFichierOuvert1.setFont(new java.awt.Font("Cormorant Garamond", 2, 23)); // NOI18N
+        btnFichierOuvert1.setFont(new java.awt.Font("Calisto MT", 2, 24)); // NOI18N
         btnFichierOuvert1.setForeground(new java.awt.Color(255, 255, 255));
         btnFichierOuvert1.setText("New-file");
         btnFichierOuvert1.addActionListener(new java.awt.event.ActionListener() {
@@ -336,7 +336,7 @@ public class Tawfekh_editor extends javax.swing.JFrame implements ActionListener
         btnFichierOuvert1.setBounds(0, 6, 140, 32);
 
         btnFichierOuvert2.setBackground(new java.awt.Color(153, 102, 0));
-        btnFichierOuvert2.setFont(new java.awt.Font("Cormorant Garamond", 2, 23)); // NOI18N
+        btnFichierOuvert2.setFont(new java.awt.Font("Calisto MT", 2, 24)); // NOI18N
         btnFichierOuvert2.setForeground(new java.awt.Color(255, 255, 255));
         btnFichierOuvert2.setText("New-file");
         btnFichierOuvert2.addActionListener(new java.awt.event.ActionListener() {
@@ -349,7 +349,7 @@ public class Tawfekh_editor extends javax.swing.JFrame implements ActionListener
         btnFichierOuvert2.setVisible(false);
 
         btnFichierOuvert3.setBackground(new java.awt.Color(153, 102, 0));
-        btnFichierOuvert3.setFont(new java.awt.Font("Cormorant Garamond", 2, 23)); // NOI18N
+        btnFichierOuvert3.setFont(new java.awt.Font("Calisto MT", 2, 24)); // NOI18N
         btnFichierOuvert3.setForeground(new java.awt.Color(255, 255, 255));
         btnFichierOuvert3.setText("New-file");
         btnFichierOuvert3.addActionListener(new java.awt.event.ActionListener() {
@@ -364,7 +364,7 @@ public class Tawfekh_editor extends javax.swing.JFrame implements ActionListener
         panelEditeur.add(panelFichiers);
         panelFichiers.setBounds(6, 54, 140, 589);
 
-        lblSaveMessage.setFont(new java.awt.Font("Cormorant Garamond", 0, 36)); // NOI18N
+        lblSaveMessage.setFont(new java.awt.Font("Calisto MT", 2, 36)); // NOI18N
         lblSaveMessage.setForeground(new java.awt.Color(153, 51, 0));
         lblSaveMessage.setText("Enregistré !");
         lblSaveMessage.addFocusListener(new java.awt.event.FocusAdapter() {
@@ -373,7 +373,7 @@ public class Tawfekh_editor extends javax.swing.JFrame implements ActionListener
             }
         });
         panelEditeur.add(lblSaveMessage);
-        lblSaveMessage.setBounds(430, 0, 160, 50);
+        lblSaveMessage.setBounds(430, 0, 260, 50);
         lblSaveMessage.setVisible(false);
 
         panelGlobale.add(panelEditeur);
@@ -384,7 +384,7 @@ public class Tawfekh_editor extends javax.swing.JFrame implements ActionListener
         panelParametre.setLayout(null);
 
         btnParamSave.setBackground(new java.awt.Color(153, 102, 0));
-        btnParamSave.setFont(new java.awt.Font("Garamond", 2, 48)); // NOI18N
+        btnParamSave.setFont(new java.awt.Font("Calisto MT", 2, 40)); // NOI18N
         btnParamSave.setForeground(new java.awt.Color(255, 255, 255));
         btnParamSave.setText("Enregistrer");
         btnParamSave.setFocusPainted(false);
@@ -394,10 +394,10 @@ public class Tawfekh_editor extends javax.swing.JFrame implements ActionListener
             }
         });
         panelParametre.add(btnParamSave);
-        btnParamSave.setBounds(42, 317, 230, 61);
+        btnParamSave.setBounds(27, 317, 230, 53);
 
         btnParamRetour.setBackground(new java.awt.Color(153, 102, 0));
-        btnParamRetour.setFont(new java.awt.Font("Garamond", 2, 48)); // NOI18N
+        btnParamRetour.setFont(new java.awt.Font("Calisto MT", 2, 40)); // NOI18N
         btnParamRetour.setForeground(new java.awt.Color(255, 255, 255));
         btnParamRetour.setText("Retour");
         btnParamRetour.setFocusPainted(false);
@@ -407,25 +407,25 @@ public class Tawfekh_editor extends javax.swing.JFrame implements ActionListener
             }
         });
         panelParametre.add(btnParamRetour);
-        btnParamRetour.setBounds(296, 317, 170, 61);
+        btnParamRetour.setBounds(281, 317, 195, 53);
 
-        txtChangeTitre.setFont(new java.awt.Font("Cormorant Garamond", 0, 24)); // NOI18N
+        txtChangeTitre.setFont(new java.awt.Font("Calisto MT", 2, 24)); // NOI18N
         panelParametre.add(txtChangeTitre);
-        txtChangeTitre.setBounds(197, 41, 270, 39);
+        txtChangeTitre.setBounds(197, 41, 280, 39);
         txtChangeTitre.setText(lblTitre.getText());
 
-        lblParamTitre.setFont(new java.awt.Font("Cormorant Garamond", 0, 36)); // NOI18N
+        lblParamTitre.setFont(new java.awt.Font("Calisto MT", 2, 36)); // NOI18N
         lblParamTitre.setText("Titre :");
         panelParametre.add(lblParamTitre);
-        lblParamTitre.setBounds(40, 34, 150, 45);
+        lblParamTitre.setBounds(30, 34, 150, 42);
 
-        lblParamTheme.setFont(new java.awt.Font("Cormorant Garamond", 0, 36)); // NOI18N
+        lblParamTheme.setFont(new java.awt.Font("Calisto MT", 2, 36)); // NOI18N
         lblParamTheme.setText("Thème : ");
         panelParametre.add(lblParamTheme);
-        lblParamTheme.setBounds(40, 100, 150, 47);
+        lblParamTheme.setBounds(30, 100, 150, 47);
 
         btnThemeClassique.setBackground(new java.awt.Color(212, 161, 8));
-        btnThemeClassique.setFont(new java.awt.Font("Cormorant Garamond", 0, 20)); // NOI18N
+        btnThemeClassique.setFont(new java.awt.Font("Calisto MT", 2, 20)); // NOI18N
         btnThemeClassique.setForeground(new java.awt.Color(255, 255, 255));
         btnThemeClassique.setText("Classique");
         btnThemeClassique.addActionListener(new java.awt.event.ActionListener() {
@@ -434,10 +434,10 @@ public class Tawfekh_editor extends javax.swing.JFrame implements ActionListener
             }
         });
         panelParametre.add(btnThemeClassique);
-        btnThemeClassique.setBounds(197, 107, 105, 39);
+        btnThemeClassique.setBounds(197, 107, 115, 39);
 
         btnThemeBlack.setBackground(new java.awt.Color(0, 0, 0));
-        btnThemeBlack.setFont(new java.awt.Font("Cormorant Garamond", 0, 20)); // NOI18N
+        btnThemeBlack.setFont(new java.awt.Font("Calisto MT", 2, 20)); // NOI18N
         btnThemeBlack.setForeground(new java.awt.Color(255, 255, 255));
         btnThemeBlack.setText("Black");
         btnThemeBlack.addActionListener(new java.awt.event.ActionListener() {
@@ -446,27 +446,27 @@ public class Tawfekh_editor extends javax.swing.JFrame implements ActionListener
             }
         });
         panelParametre.add(btnThemeBlack);
-        btnThemeBlack.setBounds(307, 107, 78, 39);
+        btnThemeBlack.setBounds(317, 107, 78, 39);
 
         cbPolice.setBackground(new java.awt.Color(168, 111, 0));
-        cbPolice.setFont(new java.awt.Font("Cormorant Garamond", 0, 24)); // NOI18N
+        cbPolice.setFont(new java.awt.Font("Calisto MT", 2, 24)); // NOI18N
         cbPolice.setForeground(new java.awt.Color(255, 255, 255));
-        cbPolice.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Garamond", "Cormorant Garamond", "Times New Roman" }));
+        cbPolice.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Calisto MT", "Garamond", "Times New Roman" }));
         cbPolice.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 cbPoliceActionPerformed(evt);
             }
         });
         panelParametre.add(cbPolice);
-        cbPolice.setBounds(197, 173, 270, 41);
+        cbPolice.setBounds(197, 173, 280, 41);
 
-        lblParamPolice.setFont(new java.awt.Font("Cormorant Garamond", 0, 36)); // NOI18N
+        lblParamPolice.setFont(new java.awt.Font("Calisto MT", 2, 36)); // NOI18N
         lblParamPolice.setText("Police :");
         panelParametre.add(lblParamPolice);
-        lblParamPolice.setBounds(40, 170, 150, 40);
+        lblParamPolice.setBounds(30, 170, 150, 40);
 
         btnUploadBg.setBackground(new java.awt.Color(168, 111, 0));
-        btnUploadBg.setFont(new java.awt.Font("Cormorant Garamond", 0, 24)); // NOI18N
+        btnUploadBg.setFont(new java.awt.Font("Calisto MT", 2, 24)); // NOI18N
         btnUploadBg.setForeground(new java.awt.Color(255, 255, 255));
         btnUploadBg.setText("Upload BackGround");
         btnUploadBg.addActionListener(new java.awt.event.ActionListener() {
@@ -475,13 +475,13 @@ public class Tawfekh_editor extends javax.swing.JFrame implements ActionListener
             }
         });
         panelParametre.add(btnUploadBg);
-        btnUploadBg.setBounds(197, 248, 270, 39);
+        btnUploadBg.setBounds(197, 248, 280, 39);
 
-        lblParamUpBG.setFont(new java.awt.Font("Cormorant Garamond", 1, 23)); // NOI18N
+        lblParamUpBG.setFont(new java.awt.Font("Calisto MT", 2, 24)); // NOI18N
         lblParamUpBG.setForeground(new java.awt.Color(153, 51, 0));
         lblParamUpBG.setText("Use 960 x 678 px");
         panelParametre.add(lblParamUpBG);
-        lblParamUpBG.setBounds(37, 250, 160, 29);
+        lblParamUpBG.setBounds(30, 250, 190, 28);
 
         lblSignature.setFont(new java.awt.Font("Freestyle Script", 3, 36)); // NOI18N
         lblSignature.setForeground(new java.awt.Color(116, 77, 0));
@@ -490,7 +490,7 @@ public class Tawfekh_editor extends javax.swing.JFrame implements ActionListener
         lblSignature.setBounds(580, 470, 120, 40);
 
         btnThemePink.setBackground(new java.awt.Color(255, 51, 102));
-        btnThemePink.setFont(new java.awt.Font("Cormorant Garamond", 0, 20)); // NOI18N
+        btnThemePink.setFont(new java.awt.Font("Calisto MT", 2, 20)); // NOI18N
         btnThemePink.setForeground(new java.awt.Color(255, 255, 255));
         btnThemePink.setText("Pink");
         btnThemePink.addActionListener(new java.awt.event.ActionListener() {
@@ -499,7 +499,7 @@ public class Tawfekh_editor extends javax.swing.JFrame implements ActionListener
             }
         });
         panelParametre.add(btnThemePink);
-        btnThemePink.setBounds(389, 107, 78, 39);
+        btnThemePink.setBounds(399, 107, 78, 39);
 
         panelGlobale.add(panelParametre);
         panelParametre.setBounds(220, 110, 730, 560);
@@ -625,7 +625,7 @@ public class Tawfekh_editor extends javax.swing.JFrame implements ActionListener
         try {
             int x = 0;
             String choix = cbPolice.getSelectedItem().toString();
-            if ("Garamond".equals(choix)) {
+            if ("Garamond".equals(choix) || "Calisto MT".equals(choix) ) {
                 x = 2;
             }
             lblTitre.setText(txtChangeTitre.getText());
@@ -654,12 +654,12 @@ public class Tawfekh_editor extends javax.swing.JFrame implements ActionListener
         btnThemeBlack.setFont(new java.awt.Font(choix, x, 20));
         btnThemePink.setFont(new java.awt.Font(choix, x, 20));
 
-        btnParamSave.setFont(new java.awt.Font(choix, x, 24));
-        btnParamRetour.setFont(new java.awt.Font(choix, x, 24));
+        btnParamSave.setFont(new java.awt.Font(choix, x, 40));
+        btnParamRetour.setFont(new java.awt.Font(choix, x, 40));
         
-        btnNouveau.setFont(new java.awt.Font(choix, x, 24));
-        btnParametre.setFont(new java.awt.Font(choix, x, 24));
-        btnQuitter.setFont(new java.awt.Font(choix, x, 24));
+        btnNouveau.setFont(new java.awt.Font(choix, x, 40));
+        btnParametre.setFont(new java.awt.Font(choix, x, 40));
+        btnQuitter.setFont(new java.awt.Font(choix, x, 40));
         
         jTextArea1.setFont(new java.awt.Font(choix, x, 24));
         jTextArea2.setFont(new java.awt.Font(choix, x, 24));

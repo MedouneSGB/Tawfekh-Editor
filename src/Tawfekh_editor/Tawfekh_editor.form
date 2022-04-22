@@ -64,7 +64,7 @@
                   <Color blue="1" green="5c" red="8a" type="rgb"/>
                 </Property>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                  <Font name="Garamond" size="48" style="2"/>
+                  <Font name="Calisto MT" size="40" style="2"/>
                 </Property>
                 <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                   <Color blue="ff" green="ff" red="ff" type="rgb"/>
@@ -87,7 +87,7 @@
                   <Color blue="0" green="66" red="99" type="rgb"/>
                 </Property>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                  <Font name="Garamond" size="48" style="2"/>
+                  <Font name="Calisto MT" size="40" style="2"/>
                 </Property>
                 <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                   <Color blue="ff" green="ff" red="ff" type="rgb"/>
@@ -110,7 +110,7 @@
                   <Color blue="0" green="66" red="99" type="rgb"/>
                 </Property>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                  <Font name="Garamond" size="48" style="2"/>
+                  <Font name="Calisto MT" size="40" style="2"/>
                 </Property>
                 <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                   <Color blue="ff" green="ff" red="ff" type="rgb"/>
@@ -130,7 +130,7 @@
             <Component class="javax.swing.JLabel" name="lblTitre">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                  <Font name="Garamond" size="78" style="2"/>
+                  <Font name="Calisto MT" size="78" style="2"/>
                 </Property>
                 <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                   <Color blue="0" green="33" red="99" type="rgb"/>
@@ -425,7 +425,7 @@
                   <Properties>
                     <Property name="columns" type="int" value="20"/>
                     <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                      <Font name="Cormorant Garamond" size="24" style="1"/>
+                      <Font name="Calisto MT" size="24" style="2"/>
                     </Property>
                     <Property name="rows" type="int" value="5"/>
                     <Property name="selectionColor" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
@@ -465,7 +465,7 @@
                     </Property>
                     <Property name="columns" type="int" value="1"/>
                     <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                      <Font name="Cormorant Garamond" size="24" style="0"/>
+                      <Font name="Calisto MT" size="24" style="2"/>
                     </Property>
                     <Property name="rows" type="int" value="5"/>
                     <Property name="text" type="java.lang.String" value="1"/>
@@ -499,7 +499,7 @@
                       <Color blue="0" green="66" red="99" type="rgb"/>
                     </Property>
                     <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                      <Font name="Cormorant Garamond" size="23" style="2"/>
+                      <Font name="Calisto MT" size="24" style="2"/>
                     </Property>
                     <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                       <Color blue="ff" green="ff" red="ff" type="rgb"/>
@@ -521,7 +521,7 @@
                       <Color blue="0" green="66" red="99" type="rgb"/>
                     </Property>
                     <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                      <Font name="Cormorant Garamond" size="23" style="2"/>
+                      <Font name="Calisto MT" size="24" style="2"/>
                     </Property>
                     <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                       <Color blue="ff" green="ff" red="ff" type="rgb"/>
@@ -546,7 +546,7 @@
                       <Color blue="0" green="66" red="99" type="rgb"/>
                     </Property>
                     <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                      <Font name="Cormorant Garamond" size="23" style="2"/>
+                      <Font name="Calisto MT" size="24" style="2"/>
                     </Property>
                     <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                       <Color blue="ff" green="ff" red="ff" type="rgb"/>
@@ -570,7 +570,7 @@
             <Component class="javax.swing.JLabel" name="lblSaveMessage">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                  <Font name="Cormorant Garamond" size="36" style="0"/>
+                  <Font name="Calisto MT" size="36" style="2"/>
                 </Property>
                 <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                   <Color blue="0" green="33" red="99" type="rgb"/>
@@ -585,7 +585,7 @@
               </AuxValues>
               <Constraints>
                 <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                  <AbsoluteConstraints x="430" y="0" width="160" height="50"/>
+                  <AbsoluteConstraints x="430" y="0" width="260" height="50"/>
                 </Constraint>
               </Constraints>
             </Component>
@@ -614,7 +614,7 @@
                   <Color blue="0" green="66" red="99" type="rgb"/>
                 </Property>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                  <Font name="Garamond" size="48" style="2"/>
+                  <Font name="Calisto MT" size="40" style="2"/>
                 </Property>
                 <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                   <Color blue="ff" green="ff" red="ff" type="rgb"/>
@@ -627,7 +627,7 @@
               </Events>
               <Constraints>
                 <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                  <AbsoluteConstraints x="42" y="317" width="230" height="-1"/>
+                  <AbsoluteConstraints x="27" y="317" width="230" height="-1"/>
                 </Constraint>
               </Constraints>
             </Component>
@@ -637,7 +637,7 @@
                   <Color blue="0" green="66" red="99" type="rgb"/>
                 </Property>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                  <Font name="Garamond" size="48" style="2"/>
+                  <Font name="Calisto MT" size="40" style="2"/>
                 </Property>
                 <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                   <Color blue="ff" green="ff" red="ff" type="rgb"/>
@@ -650,14 +650,14 @@
               </Events>
               <Constraints>
                 <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                  <AbsoluteConstraints x="296" y="317" width="170" height="-1"/>
+                  <AbsoluteConstraints x="281" y="317" width="195" height="-1"/>
                 </Constraint>
               </Constraints>
             </Component>
             <Component class="javax.swing.JTextField" name="txtChangeTitre">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                  <Font name="Cormorant Garamond" size="24" style="0"/>
+                  <Font name="Calisto MT" size="24" style="2"/>
                 </Property>
               </Properties>
               <AuxValues>
@@ -665,33 +665,33 @@
               </AuxValues>
               <Constraints>
                 <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                  <AbsoluteConstraints x="197" y="41" width="270" height="39"/>
+                  <AbsoluteConstraints x="197" y="41" width="280" height="39"/>
                 </Constraint>
               </Constraints>
             </Component>
             <Component class="javax.swing.JLabel" name="lblParamTitre">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                  <Font name="Cormorant Garamond" size="36" style="0"/>
+                  <Font name="Calisto MT" size="36" style="2"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="Titre :"/>
               </Properties>
               <Constraints>
                 <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                  <AbsoluteConstraints x="40" y="34" width="150" height="-1"/>
+                  <AbsoluteConstraints x="30" y="34" width="150" height="-1"/>
                 </Constraint>
               </Constraints>
             </Component>
             <Component class="javax.swing.JLabel" name="lblParamTheme">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                  <Font name="Cormorant Garamond" size="36" style="0"/>
+                  <Font name="Calisto MT" size="36" style="2"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="Th&#xe8;me : "/>
               </Properties>
               <Constraints>
                 <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                  <AbsoluteConstraints x="40" y="100" width="150" height="47"/>
+                  <AbsoluteConstraints x="30" y="100" width="150" height="47"/>
                 </Constraint>
               </Constraints>
             </Component>
@@ -701,7 +701,7 @@
                   <Color blue="8" green="a1" red="d4" type="rgb"/>
                 </Property>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                  <Font name="Cormorant Garamond" size="20" style="0"/>
+                  <Font name="Calisto MT" size="20" style="2"/>
                 </Property>
                 <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                   <Color blue="ff" green="ff" red="ff" type="rgb"/>
@@ -713,7 +713,7 @@
               </Events>
               <Constraints>
                 <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                  <AbsoluteConstraints x="197" y="107" width="105" height="39"/>
+                  <AbsoluteConstraints x="197" y="107" width="115" height="39"/>
                 </Constraint>
               </Constraints>
             </Component>
@@ -723,7 +723,7 @@
                   <Color blue="0" green="0" red="0" type="rgb"/>
                 </Property>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                  <Font name="Cormorant Garamond" size="20" style="0"/>
+                  <Font name="Calisto MT" size="20" style="2"/>
                 </Property>
                 <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                   <Color blue="ff" green="ff" red="ff" type="rgb"/>
@@ -735,7 +735,7 @@
               </Events>
               <Constraints>
                 <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                  <AbsoluteConstraints x="307" y="107" width="78" height="39"/>
+                  <AbsoluteConstraints x="317" y="107" width="78" height="39"/>
                 </Constraint>
               </Constraints>
             </Component>
@@ -745,15 +745,15 @@
                   <Color blue="0" green="6f" red="a8" type="rgb"/>
                 </Property>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                  <Font name="Cormorant Garamond" size="24" style="0"/>
+                  <Font name="Calisto MT" size="24" style="2"/>
                 </Property>
                 <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                   <Color blue="ff" green="ff" red="ff" type="rgb"/>
                 </Property>
                 <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
                   <StringArray count="3">
-                    <StringItem index="0" value="Garamond"/>
-                    <StringItem index="1" value="Cormorant Garamond"/>
+                    <StringItem index="0" value="Calisto MT"/>
+                    <StringItem index="1" value="Garamond"/>
                     <StringItem index="2" value="Times New Roman"/>
                   </StringArray>
                 </Property>
@@ -766,20 +766,20 @@
               </AuxValues>
               <Constraints>
                 <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                  <AbsoluteConstraints x="197" y="173" width="270" height="41"/>
+                  <AbsoluteConstraints x="197" y="173" width="280" height="41"/>
                 </Constraint>
               </Constraints>
             </Component>
             <Component class="javax.swing.JLabel" name="lblParamPolice">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                  <Font name="Cormorant Garamond" size="36" style="0"/>
+                  <Font name="Calisto MT" size="36" style="2"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="Police :"/>
               </Properties>
               <Constraints>
                 <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                  <AbsoluteConstraints x="40" y="170" width="150" height="40"/>
+                  <AbsoluteConstraints x="30" y="170" width="150" height="40"/>
                 </Constraint>
               </Constraints>
             </Component>
@@ -789,7 +789,7 @@
                   <Color blue="0" green="6f" red="a8" type="rgb"/>
                 </Property>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                  <Font name="Cormorant Garamond" size="24" style="0"/>
+                  <Font name="Calisto MT" size="24" style="2"/>
                 </Property>
                 <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                   <Color blue="ff" green="ff" red="ff" type="rgb"/>
@@ -801,14 +801,14 @@
               </Events>
               <Constraints>
                 <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                  <AbsoluteConstraints x="197" y="248" width="270" height="39"/>
+                  <AbsoluteConstraints x="197" y="248" width="280" height="39"/>
                 </Constraint>
               </Constraints>
             </Component>
             <Component class="javax.swing.JLabel" name="lblParamUpBG">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                  <Font name="Cormorant Garamond" size="23" style="1"/>
+                  <Font name="Calisto MT" size="24" style="2"/>
                 </Property>
                 <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                   <Color blue="0" green="33" red="99" type="rgb"/>
@@ -817,7 +817,7 @@
               </Properties>
               <Constraints>
                 <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                  <AbsoluteConstraints x="37" y="250" width="160" height="-1"/>
+                  <AbsoluteConstraints x="30" y="250" width="190" height="-1"/>
                 </Constraint>
               </Constraints>
             </Component>
@@ -843,7 +843,7 @@
                   <Color blue="66" green="33" red="ff" type="rgb"/>
                 </Property>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                  <Font name="Cormorant Garamond" size="20" style="0"/>
+                  <Font name="Calisto MT" size="20" style="2"/>
                 </Property>
                 <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                   <Color blue="ff" green="ff" red="ff" type="rgb"/>
@@ -855,7 +855,7 @@
               </Events>
               <Constraints>
                 <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                  <AbsoluteConstraints x="389" y="107" width="78" height="39"/>
+                  <AbsoluteConstraints x="399" y="107" width="78" height="39"/>
                 </Constraint>
               </Constraints>
             </Component>

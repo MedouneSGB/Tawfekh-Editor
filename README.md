@@ -21,5 +21,5 @@ Drop Pull Requests and push some stars ⭐⭐⭐
 ![image](https://user-images.githubusercontent.com/40875400/164509494-1f6c9c9d-3e7c-40f9-9e13-0d62fdf0b90c.png)
 ![image](https://user-images.githubusercontent.com/40875400/164509563-1ade0aab-709d-4398-8863-6ed56f3a5f67.png)
   
-<a href="https://github.com/GalsenDev221/made.in.senegal"><img src="https://raw.githubusercontent.com/GalsenDev221/made.in.senegal/33552c3002801437cb9973915a0666371ab1b50b/assets/badge.svg"></a> 
+<a href="https://github.com/GalsenDev221/made.in.senegal"><img src="https://raw.githubusercontent.com/GalsenDev221/made.in.senegal/a4d8877ecf8060ba1adbf2a726d8be1aab61d40b/assets/badge.svg"></a> 
 

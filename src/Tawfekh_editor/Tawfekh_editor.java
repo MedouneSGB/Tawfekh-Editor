@@ -739,7 +739,7 @@ public class Tawfekh_editor extends javax.swing.JFrame implements ActionListener
     }
 
     private void btnUploadBgActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnUploadBgActionPerformed
-        // Updoad New Background.
+        // Upload new background.
         try {
             JFileChooser chooser = new JFileChooser();
             chooser.showOpenDialog(null);

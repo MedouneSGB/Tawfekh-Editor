@@ -717,24 +717,24 @@ public class Tawfekh_editor extends javax.swing.JFrame implements ActionListener
 
     public void changeTitreEtMenuColor(Color colorTitre, Color colorMenu) {
         // Change Title and Settings Text Color.
-        lblTitre.setForeground(Color.getColor("", colorTitre));
-        jTextArea1.setForeground(Color.getColor("", colorMenu));
-        lblParamTitre.setForeground(Color.getColor("", colorMenu));
-        lblParamTheme.setForeground(Color.getColor("", colorMenu));
-        lblParamPolice.setForeground(Color.getColor("", colorMenu));
-        lblSignature.setForeground(Color.getColor("", colorMenu));
-        lblParamUpBG.setForeground(Color.getColor("", colorMenu));
+        lblTitre.setForeground(colorTitre);
+        jTextArea1.setForeground(colorMenu);
+        lblParamTitre.setForeground(colorMenu);
+        lblParamTheme.setForeground(colorMenu);
+        lblParamPolice.setForeground(colorMenu);
+        lblSignature.setForeground(colorMenu);
+        lblParamUpBG.setForeground(colorMenu);
 
     }
 
     public void changeBtnColor(Color color) {
         // Change Editor Btns Color.
-        btnAdd.setBackground(Color.getColor("", color));
-        btnOpen.setBackground(Color.getColor("", color));
-        btnSave.setBackground(Color.getColor("", color));
-        btnSaveAs.setBackground(Color.getColor("", color));
-        btnColor.setBackground(Color.getColor("", color));
-        btnExit.setBackground(Color.getColor("", color));
+        btnAdd.setBackground(color);
+        btnOpen.setBackground(color);
+        btnSave.setBackground(color);
+        btnSaveAs.setBackground(color);
+        btnColor.setBackground(color);
+        btnExit.setBackground(color);
 
     }
 
